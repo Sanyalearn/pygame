@@ -1,179 +1,171 @@
-.. image:: https://raw.githubusercontent.com/pygame/pygame/main/docs/reST/_static/pygame_logo.svg
-  :alt: pygame
-  :target: https://www.pygame.org/
+Pygame_ — бесплатная кроссплатформенная библиотека с открытым исходным кодом.
+для разработки мультимедийных приложений, таких как видеоигры, с использованием Python.
+Он использует библиотеку Simple DirectMedia Layer и несколько других.
+популярные библиотеки для абстрагирования наиболее распространенных функций, что делает написание
+эти программы более интуитивная задача.
+
+`Нам нужна ваша помощь`_, чтобы сделать pygame как можно лучше!
+Приветствуются новые участники.
 
 
-|AppVeyorBuild| |PyPiVersion| |PyPiLicense|
-|Python3| |GithubCommits| |BlackFormatBadge|
-
-Pygame_ is a free and open-source cross-platform library
-for the development of multimedia applications like video games using Python.
-It uses the `Simple DirectMedia Layer library`_ and several other
-popular libraries to abstract the most common functions, making writing
-these programs a more intuitive task.
-
-`We need your help`_ to make pygame the best it can be!
-New contributors are welcome.
-
-
-Installation
+Установка
 ------------
 
 ::
 
-   pip install pygame
+   pip установить pygame
 
 
-Help
+Помощь
 ----
 
-If you are just getting started with pygame, you should be able to
-get started fairly quickly.  Pygame comes with many tutorials and
-introductions.  There is also full reference documentation for the
-entire library. Browse the documentation on the `docs page`_. You
-can also browse the documentation locally by running `python -m pygame.docs`
-in your terminal. If the docs aren't found locally, it'll launch the online
-website instead.
+Если вы только начинаете работать с pygame, вы сможете
+начать довольно быстро. Pygame поставляется с множеством руководств и
+введения. Также имеется полная справочная документация по
+вся библиотека. Просмотрите документацию на `странице документов`_. Ты
+также можно просматривать документацию локально, запустив `python -m pygame.docs`
+в вашем терминале. Если документы не будут найдены локально, он запустит веб-сайт.
+веб-сайт вместо этого.
 
-The online documentation stays up to date with the development version
-of pygame on github.  This may be a bit newer than the version of pygame
-you are using. To upgrade to the latest full release, run 
-``pip install pygame --upgrade`` in your terminal.
+Онлайн-документация остается актуальной с версией разработки
+pygame на github. Это может быть немного новее, чем версия pygame.
+ты используешь. Чтобы выполнить обновление до последней полной версии, запустите
+``pip install pygame --upgrade`` в вашем терминале.
 
-Best of all, the examples directory has many playable small programs
-which can get you started playing with the code right away.
+Лучше всего то, что в каталоге примеров есть много играбельных небольших программ.
+который может заставить вас начать играть с кодом прямо сейчас.
 
 
-Building From Source
+Создание из исходного кода
 --------------------
 
-If you want to use features that are currently in development,
-or you want to contribute to pygame, you will need to build pygame
-locally from its source code, rather than pip installing it.
+Если вы хотите использовать функции, которые в настоящее время находятся в разработке,
+или вы хотите внести свой вклад в pygame, вам нужно будет собрать pygame
+локально из исходного кода, а не устанавливая его.
 
-Installing from source is fairly automated. The most work will
-involve compiling and installing all the pygame dependencies.  Once
-that is done, run the ``setup.py`` script which will attempt to
-auto-configure, build, and install pygame.
+Установка из исходников достаточно автоматизирована. Больше всего работы будет
+включает компиляцию и установку всех зависимостей pygame. Один раз
+после этого запустите сценарий ``setup.py``, который попытается
+автоматическая настройка, сборка и установка pygame.
 
-Much more information about installing and compiling is available
-on the `Compilation wiki page`_.
-
-
-Credits
+Доступно гораздо больше информации об установке и компиляции
+на `вики-странице компиляции`_.
+Кредиты
 -------
 
-Thanks to everyone who has helped contribute to this library.
-Special thanks are also in order.
+Спасибо всем, кто помог внести свой вклад в эту библиотеку.
+Отдельное спасибо тоже в порядке.
 
-* Marcus Von Appen: many changes, and fixes, 1.7.1+ freebsd maintainer
-* Lenard Lindstrom: the 1.8+ windows maintainer, many changes, and fixes
-* Brian Fisher for svn auto builder, bug tracker and many contributions
-* Rene Dudfield: many changes, and fixes, 1.7+ release manager/maintainer
-* Phil Hassey for his work on the pygame.org website
-* DR0ID for his work on the sprite module
-* Richard Goedeken for his smoothscale function
-* Ulf Ekström for his pixel perfect collision detection code
-* Pete Shinners: original author
-* David Clark for filling the right-hand-man position
-* Ed Boraas and Francis Irving: Debian packages
-* Maxim Sobolev: FreeBSD packaging
-* Bob Ippolito: MacOS and OS X porting (much work!)
-* Jan Ekhol, Ray Kelm, and Peter Nicolai: putting up with early design ideas
-* Nat Pryce for starting our unit tests
-* Dan Richter for documentation work
-* TheCorruptor for his incredible logos and graphics
-* Nicholas Dudfield: many test improvements
-* Alex Folkner for pygame-ctypes
+* Маркус фон Аппен: множество изменений и исправлений, сопровождающий freebsd 1.7.1+
+* Ленард Линдстром: сопровождающий Windows 1.8+, множество изменений и исправлений.
+* Брайан Фишер за svn auto builder, баг-трекер и другие дополнения.
+* Rene Dudfield: множество изменений и исправлений, менеджер/сопровождающий релизов 1.7+
+* Фил Хэсси за работу над веб-сайтом pygame.org.
+* DR0ID за работу над спрайтовым модулем
+* Ричард Гедекен за его функцию плавного масштабирования
+* Ульф Экстрем за его идеальный код обнаружения столкновений пикселей
+* Пит Шиннерс: оригинальный автор
+* Дэвид Кларк за заполнение позиции правой руки
+* Эд Бораас и Фрэнсис Ирвинг: пакеты Debian
+* Максим Соболев: Упаковка FreeBSD
+* Боб Ипполито: Портирование MacOS и OS X (много работы!)
+* Ян Экхоль, Рэй Кельм и Питер Николаи: мирятся с ранними дизайнерскими идеями
+* Nat Pryce за запуск наших модульных тестов
+* Дэн Рихтер за работу с документацией
+* TheCorruptor за его невероятные логотипы и графику
+* Николас Дадфилд: множество тестовых улучшений
+* Алекс Фолкнер для pygame-ctypes
 
-Thanks to those sending in patches and fixes: Niki Spahiev, Gordon
-Tyler, Nathaniel Pryce, Dave Wallace, John Popplewell, Michael Urman,
-Andrew Straw, Michael Hudson, Ole Martin Bjoerndalen, Herve Cauwelier,
-James Mazer, Lalo Martins, Timothy Stranex, Chad Lester, Matthias
-Spiller, Bo Jangeborg, Dmitry Borisov, Campbell Barton, Diego Essaya,
-Eyal Lotem, Regis Desgroppes, Emmanuel Hainry, Randy Kaelber
-Matthew L Daniel, Nirav Patel, Forrest Voight, Charlie Nolan,
-Frankie Robertson, John Krukoff, Lorenz Quack, Nick Irvine,
-Michael George, Saul Spatz, Thomas Ibbotson, Tom Rothamel, Evan Kroske,
-Cambell Barton.
+Спасибо тем, кто присылает патчи и исправления: Ники Спахиев, Гордон
+Тайлер, Натаниэль Прайс, Дэйв Уоллес, Джон Попплуэлл, Майкл Урман,
+Эндрю Стро, Майкл Хадсон, Оле Мартин Бьорндален, Эрве Ковельер,
+Джеймс Мазер, Лало Мартинс, Тимоти Странекс, Чад Лестер, Матиас
+Спиллер, Бо Янгеборг, Дмитрий Борисов, Кэмпбелл Бартон, Диего Эссая,
+Эяль Лотем, Режис Десгропп, Эммануэль Хейнри, Рэнди Кельбер
+Мэттью Л Дэниел, Нирав Патель, Форрест Войт, Чарли Нолан,
+Фрэнки Робертсон, Джон Крукофф, Лоренц Квак, Ник Ирвин,
+Майкл Джордж, Сол Спатц, Томас Ибботсон, Том Ротамел, Эван Кроске,
+Кэмбелл Бартон.
 
-And our bug hunters above and beyond: Angus, Guillaume Proux, Frank
-Raiser, Austin Henry, Kaweh Kazemi, Arturo Aldama, Mike Mulcheck,
-Michael Benfield, David Lau
+И наши охотники за ошибками выше и выше: Ангус, Гийом Пру, Франк
+Райзер, Остин Генри, Кавех Каземи, Артуро Алдама, Майк Мулчек,
+Майкл Бенфилд, Дэвид Лау
 
-There's many more folks out there who've submitted helpful ideas, kept
-this project going, and basically made our life easier.  Thanks!
+Есть еще много людей, которые представили полезные идеи, сохранили
+этот проект пошел, и в основном сделал нашу жизнь проще. Спасибо!
 
-Many thank you's for people making documentation comments, and adding to the
-pygame.org wiki.
+Большое спасибо за комментарии к документации и добавление
+вики pygame.org.
 
-Also many thanks for people creating games and putting them on the
-pygame.org website for others to learn from and enjoy.
+Также большое спасибо людям, создающим игры и размещающим их на
+pygame.org, чтобы другие могли учиться и получать удовольствие.
 
-Lots of thanks to James Paige for hosting the pygame bugzilla.
+Большое спасибо Джеймсу Пейджу за размещение багзиллы pygame.
 
-Also a big thanks to Roger Dingledine and the crew at SEUL.ORG for our
-excellent hosting.
-
-Dependencies
+Также большое спасибо Роджеру Динглдайну и команде SEUL.ORG за наше
+отличный хостинг.
+Зависимости
 ------------
 
-Pygame is obviously strongly dependent on SDL and Python.  It also
-links to and embeds several other smaller libraries.  The font
-module relies on SDL_ttf, which is dependent on freetype.  The mixer
-(and mixer.music) modules depend on SDL_mixer.  The image module
-depends on SDL_image, which also can use libjpeg and libpng.  The
-transform module has an embedded version of SDL_rotozoom for its
-own rotozoom function.  The surfarray module requires the Python
-NumPy package for its multidimensional numeric arrays.
-Dependency versions:
+Очевидно, что Pygame сильно зависит от SDL и Python. Это также
+ссылки и встраивание нескольких других меньших библиотек. Шрифт
+модуль использует SDL_ttf, который зависит от свободного типа. Миксер
+(и модули mix.music) зависят от SDL_mixer. Модуль изображения
+зависит от SDL_image, который также может использовать libjpeg и libpng.
+модуль преобразования имеет встроенную версию SDL_rotozom для его
+собственная функция ротозума. Для модуля Surfarray требуется Python
+Пакет NumPy для его многомерных числовых массивов.
+Версии зависимостей:
 
-* CPython >= 3.6 or PyPy3
-* SDL >= 2.0.4
+* CPython >= 3.6 или PyPy3
+* СДЛ >= 2.0.4
 * SDL_mixer >= 2.0.0
-* SDL_image >= 2.0.2
+* SDL_изображение >= 2.0.2
 * SDL_ttf >= 2.0.11
-* SDL_gfx (optional, vendored in)
-* NumPy >= 1.6.2 (optional)
+* SDL_gfx (необязательный, поставляется)
+* NumPy >= 1.6.2 (необязательно)
 
 
-License
+Лицензия
 -------
 
-This library is distributed under `GNU LGPL version 2.1`_, which can
-be found in the file ``docs/LGPL.txt``.  We reserve the right to place
-future versions of this library under a different license.
+Эта библиотека распространяется под `GNU LGPL версии 2.1`_, которая может
+можно найти в файле ``docs/LGPL.txt``. Мы оставляем за собой право размещать
+будущие версии этой библиотеки под другой лицензией.
 
-This basically means you can use pygame in any project you want,
-but if you make any changes or additions to pygame itself, those
-must be released with a compatible license (preferably submitted
-back to the pygame project).  Closed source and commercial games are fine.
+В основном это означает, что вы можете использовать pygame в любом проекте, который вы хотите,
+но если вы внесете какие-либо изменения или дополнения в сам pygame, эти
+должен быть выпущен с совместимой лицензией (желательно
+вернуться к проекту pygame). Игры с закрытым исходным кодом и коммерческие игры в порядке.
 
-The programs in the ``examples`` subdirectory are in the public domain.
+Программы в подкаталоге ``examples`` находятся в общественном достоянии.
 
-See docs/licenses for licenses of dependencies.
+См. docs/licenses для лицензий зависимостей.
 
 
-.. |AppVeyorBuild| image:: https://ci.appveyor.com/api/projects/status/x4074ybuobsh4myx?svg=true
-   :target: https://ci.appveyor.com/project/pygame/pygame
+.. |AppVeyorBuild| изображение:: https://ci.appveyor.com/api/projects/status/x4074ybuobsh4myx?svg=true
+   : цель: https://ci.appveyor.com/project/pygame/pygame
 
-.. |PyPiVersion| image:: https://img.shields.io/pypi/v/pygame.svg?v=1
-   :target: https://pypi.python.org/pypi/pygame
+.. |ПиПиВерсия| изображение:: https://img.shields.io/pypi/v/pygame.svg?v=1
+   : цель: https://pypi.python.org/pypi/pygame
 
-.. |PyPiLicense| image:: https://img.shields.io/pypi/l/pygame.svg?v=1
-   :target: https://pypi.python.org/pypi/pygame
+.. |PyPiLicense| изображение:: https://img.shields.io/pypi/l/pygame.svg?v=1
+   : цель: https://pypi.python.org/pypi/pygame
 
-.. |Python3| image:: https://img.shields.io/badge/python-3-blue.svg?v=1
+.. |Питон3| изображение:: https://img.shields.io/badge/python-3-blue.svg?v=1
 
-.. |GithubCommits| image:: https://img.shields.io/github/commits-since/pygame/pygame/2.1.2.svg
-   :target: https://github.com/pygame/pygame/compare/2.1.2...main
+.. |GithubCommits| изображение:: https://img.shields.io/github/commits-since/pygame/pygame/2.1.2.svg
+   : цель: https://github.com/pygame/pygame/compare/2.1.2...main
 
-.. |BlackFormatBadge| image:: https://img.shields.io/badge/code%20style-black-000000.svg
-    :target: https://github.com/psf/black
+.. |ЧерныйЗначокФормата| изображение:: https://img.shields.io/badge/code%20style-black-000000.svg
+    : цель: https://github.com/psf/черный
 
 .. _pygame: https://www.pygame.org
-.. _Simple DirectMedia Layer library: https://www.libsdl.org
-.. _We need your help: https://www.pygame.org/contribute.html
-.. _Compilation wiki page: https://www.pygame.org/wiki/Compilation
-.. _docs page: https://www.pygame.org/docs/
-.. _GNU LGPL version 2.1: https://www.gnu.org/copyleft/lesser.html
+.. Библиотека _Simple DirectMedia Layer: https://www.libsdl.org
+.. _Нам нужна ваша помощь: https://www.pygame.org/contribute.html
+.. _Вики-страница Компиляции: https://www.pygame.org/wiki/Компиляция
+.. Страница _docs: https://www.pygame.org/docs/
+.. _GNU LGPL версии 2.1: https://www.gnu.org/copyleft/lesser.html
+
+
+
